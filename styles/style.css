@@ -20,3 +20,252 @@
 
         • Mažas ekranas (iki 991px): turinys pateikiamas vienu stulpeliu (kaip mobile makete).
     • Didelis ekranas (nuo 992px): turinys pateikiamas keliais stulpeliais (kaip desktop makete). */
+
+    /* Main styles and variables */
+:root{
+    --main-color: #a2cf8d;
+    --hover-color: #5c9d7d;
+    --background-dark: #3f3f3f;
+    --background-light: #f2f2f2;
+}
+
+*{
+    box-sizing: border-box;
+}
+button:hover, input[type="submit"]:hover{
+    background-color: var(--hover-color);
+}
+a:hover{
+    color: var(--hover-color);
+    text-decoration: underline 0.2rem;
+    text-underline-offset:0.5rem;
+}
+
+img{
+    width: 100%;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    margin-right: 3rem;
+}
+body{
+    margin-block: 0;
+    max-width: 1200px;
+    min-width: 575px;
+    margin-inline: auto;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3{
+    font-family: 'Montserrat', arial, sans-serif;
+}
+hr{
+    width: 10%;
+    height: 0.2rem;
+    background-color: black;
+    border-style: none;
+    margin-top: -1rem;
+}
+button, input[type="submit"]{
+    padding: 0.8rem;
+    border-radius: 3rem;
+    border-style: none;
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Header styling */
+header{
+    background-image: url("../assets/images/header.jpg");
+    background-size:cover;
+    background-position: center;
+    height: 30rem;
+}
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+header > nav img{
+    width: 10rem;
+    height: 2.5rem;
+}
+
+header span,header h1,header p,header button{
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+header span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* What we do section */
+#what-we-do{
+    text-align: center;
+    background-color: var(--background-light);
+    padding: 1rem;
+    padding-inline: 3rem;
+}
+#what-we-do img{
+    width: auto;
+    height: auto;
+}
+.works{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+#what-we-do article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px 5px #b5b5b5;
+}
+
+/* New Offers section */
+#new-offers{
+    background-color: var(--background-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-inline: 3rem;
+}
+#new-offers article{
+    width: 40%;
+}
+
+.discover{
+    background-color: white;
+    color: black;
+    margin-right: 1rem;
+}
+#new-offers img{
+    width: 15rem;
+    height: auto;
+    position: relative;
+}
+.offers-images{
+    width: 40%;
+}
+.cups{
+    transform: translate(50%, 40%);
+}
+.nachos{
+    transform: translate(80%, 30%);
+}
+.pancakes{
+    transform: translate(10%, -90%);
+}
+
+
+
+/* Portfolio section */
+#portfolio{
+    padding-inline: 3rem;
+    background-color: var(--background-light);
+    text-align: center;
+    padding-block: 3rem;
+}
+#portfolio ul{
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-images{
+    display: flex;
+    width: 20%;
+    gap: 1rem;
+}
+
+
+/* Contact us section */
+
+#contact{
+    background-color: var(--background-dark);
+    padding: 1rem;
+    padding-inline: 3rem;
+}
+#contact h2{
+    text-align: center;
+    color: white;
+}
+#contact hr{
+    background-color: white;
+}
+#message, #name, #email{
+    background-color: #696969;
+    border: none;
+    margin: 0.5rem;
+}
+form{
+    width: 100%;
+}
+#message{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+#name, #email{
+    padding: 0.5rem;
+}
+
+/* footer */
+footer{
+    background-color: rgb(48, 47, 47);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer a{
+    color: red;
+}
+
+
+@media (max-width:991px){
+    .works{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #what-we-do article{
+        width: 90%;
+    }
+    #new-offers{
+        flex-direction: column;
+        align-items: center;
+    }
+    #new-offers article{
+        width: 90%;
+    }
+    .offers-images{
+        width: 80%;
+    }
+    .nachos{
+        transform: translate(-10rem);
+    }
+    .portfolio-images{
+        flex-direction: column;
+        width: 60%;
+        align-items: center;
+        /* Necentruoja, pasimeciau kur ir kodel */
+    }
+    #message, #name, #email{
+        width: 90%;
+    }
+}
