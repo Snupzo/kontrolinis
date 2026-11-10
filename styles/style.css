@@ -1,0 +1,22 @@
+/* Maksimalus turinio plotis 1200px, minimalus plotis 575px,  visas puslapis centre.
+
+    1. Įvadinės dalis. Viršus: navigacija - logotipas kairėje, 4 nuorodos dešinėje (About us, Portfolio, Blog, Contact us). Įvadinės dalies viduryje (išcentruota) - suformatuotas tekstas „introduction to“, tada <h1>, trumpos anotacijos pastraipa ir  mygtukas („discover more“). 
+    2. Dalis „What we do“ – antraštė su trumpa pabraukimo linija, 4 kortelės su tekstu/ikonėle, baltas fonas, minkštas šešėlis. 
+    3. Dalis „New offers“ – sekcijos aprašymas su antrašte , 2 mygtukai su skirtinga fono spalva ir skirtingu hover efectu (juodas ir žalias) ir 3 nuotraukos, specifiškai išdėstytos.
+    4. Dalis „Our Portfolio“ – sekcjos įvadinė dalis ir nuotraukos, minkštas šešėlis. 
+    5. Dalis „Contact Us“ – forma: Name, Email, Message, mygtukas Send. 
+    6. Baigiamojo dalis – social nuorodos, autorystės eilutė.
+
+    Stiliaus gairės
+    • Šriftai:  
+        ◦ antraštėms: ‘Montserrat’, arial, sans-serif.
+        ◦ tekstui: ‘Open Sans’, arial, sans-serif.
+    • Spalvos (gali būti apytikslės): 
+        ◦ pagrindinė spalva – žalsva ( #a2cf8d ), 
+        ◦ hover spalva - žalia ( #5c9d7d ) ir juoda, 
+        ◦ pilka fono spalva ( #3f3f3f ), 
+        ◦ šviesi fono spalva ( #f2f2f2 ).
+    • Šešėlis: 0px 0px 15px 5px #b5b5b5;
+
+        • Mažas ekranas (iki 991px): turinys pateikiamas vienu stulpeliu (kaip mobile makete).
+    • Didelis ekranas (nuo 992px): turinys pateikiamas keliais stulpeliais (kaip desktop makete). */
